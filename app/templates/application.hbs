@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Ember Sorting</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            {{#link-to "algorithm"}}Algorithms{{/link-to}}
+          </li>
+          <li>
+            {{#link-to "about"}}About{{/link-to}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    {{outlet}}
+  </div>
+</div>

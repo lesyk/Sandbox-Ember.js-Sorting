@@ -1,0 +1,34 @@
+a {
+  margin: 1px;
+  border-radius: 4px;
+}
+a.active {
+  color: #fff;
+  background-color: #337ab7;
+}
+a:focus,
+a:hover {
+  color: #23527c;
+}
+.bar {
+  width:25px;
+  margin: 1px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+.interpreter {
+  padding-top: 20px;
+}
+.CodeMirror {
+  border: 1px solid #eee;
+  height: auto;
+}
+#code {
+  font-family: monospace;
+  font-size: larger;
+  height: 15em;
+  width: 100%;
+  max-width: 111ex;
+}

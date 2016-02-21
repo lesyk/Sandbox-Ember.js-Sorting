@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-4">
+    <h3>Algorithms</h3>
+    <ul>
+      {{#each algorithms as |al|}}
+      <a href="#" {{action "select" al}}>{{al.name}}</a><br />
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-8">
+    {{#if selected}}
+      <h3>{{selected.name}}</h3>
+      {{js-interpreter code=selected.code}}
+    {{else}}
+      <h4>Select an algorithm</h4>
+    {{/if}}
+  </div>
+</div>
